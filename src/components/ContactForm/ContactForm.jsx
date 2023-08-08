@@ -5,9 +5,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { useState } from "react";
 const ContactForm = () => {
-  const [name, setName] = useState("Anshu");
-  const [email, setEmail] = useState("support@dosomecoding.com");
-  const [text, setText] = useState("Subscribe to this channel");
+  const [name, setName] = useState("Mayank");
+  const [email, setEmail] = useState("xyz@abc.com");
+  const [text, setText] = useState("Welcome");
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -58,9 +58,7 @@ const ContactForm = () => {
           <div>{name + " " + email + " " + text}</div>
         </form>
       </div>
-      <div className={styles.contact_image}>
-        <img src="/images/contact.svg" alt="contact image" />
-      </div>
+      
     </section>
   );
 };
